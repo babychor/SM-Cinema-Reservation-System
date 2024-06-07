@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo 2', sans-serif;
+  background: #222222;
+  color: white;
+  font-size: 18px; /* Increased font size for better readability */
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 80%; /* Center and limit width to ensure content is not too wide */
+  max-width: 1200px; /* Limit maximum width to prevent stretching on very large screens */
+  margin: 0 auto; /* Center align horizontally */
+}
+
+.Movies {
+  margin-bottom: 32px; /* Increased margin */
+}
+
+.Movies select {
+  appearance: none;
+  background: white;
+  font-size: 18px; /* Increased font size */
+  margin-left: 16px; /* Increased margin */
+  border-radius: 4px;
+  padding: 10px 32px; /* Increased padding */
+}
+
+.ShowCase {
+  margin: 0 0 64px; /* Increased margin */
+  padding: 16px; /* Increased padding */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: #3b3b3b;
+  border-radius: 4px;
+  color: #7e7e7e;
+}
+
+.ShowCase li {
+  margin: 0 20px; /* Increased margin */
+}
+
+.Cinema {
+  margin-bottom: 32px; /* Increased margin */
+  perspective: 600px; /* Increased perspective depth */
+  display: grid;
+  place-items: center;
+  grid-gap: 24px;
+}
+
+.Cinema .screen {
+  height: 200px; /* Increased height */
+  background: white;
+  width: 100%;
+  transform: rotateX(-30deg) scale(1.1); /* Increased scale for better visibility */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Increased shadow for depth */
+}
+
+.Cinema .seats {
+  display: grid;
+  grid-gap: 20px; /* Increased gap */
+  grid-template-columns: repeat(10, min-content); /* Adjusted columns for better layout */
+  align-items: center;
+}
+
+.Cinema .seats .seat:nth-of-type(10n + 2) {
+  margin-right: 30px; /* Increased margin */
+}
+
+.Cinema .seats .seat:nth-of-type(10n + 6) {
+  margin-right: 30px; /* Increased margin */
+}
+
+.Cinema .seats .seat:not(.occupied):hover,
+.Cinema .seats .seat:not(.occupied):focus {
+  cursor: pointer;
+  background: #c1eac5;
+  transform: scale(1.2);
+}
+
+.Cinema .seats .seat.selected::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 18px; /* Increased size */
+  height: 18px; /* Increased size */
+  border-radius: 100%;
+  background: transparent;
+  border: 2px solid #7bc47f;
+  animation: show-off 0.8s;
+  visibility: hidden;
+}
+
+@keyframes show-off {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.seat {
+  display: inline-block;
+  background: #626262;
+  width: 34px; /* Increased width */
+  height: 28px; /* Adjusted height */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  top: 1px;
+}
+
+.seat.selected {
+  background: #7bc47f !important;
+}
+
+.seat.occupied {
+  background: #cfcfcf;
+}
+
+.info .count {
+  color: #7bc47f;
+}
+
+.info .total {
+  color: #7bc47f;
+}
+
+.confirm-button {
+    padding: 16px 32px; /* Button padding */
+    font-size: 18px; /* Button font size */
+    background-color: #4caf50; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Button border radius */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin-top: 20px;
+  }
+  
+  .confirm-button:hover {
+    background-color: #45a049; /* Darker background color on hover */
+  }
+.confirmation-message{
+    padding: 16px 32px; /* Button padding */
+    font-size: 18px; /* Button font size */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Button border radius */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin-top: 20px;
+    color:#45a049;
+}

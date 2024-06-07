@@ -1,0 +1,92 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px; /* Increased font size */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: #666;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0 0 20px; /* Increased margin */
+  font-size: 36px; /* Increased font size */
+}
+
+h4 {
+  margin-bottom: 40px; /* Increased margin */
+  font-size: 24px; /* Increased font size */
+}
+
+h1,
+h2,
+h4 {
+  text-align: center;
+}
+
+.App-payment {
+  padding: 50px; /* Increased padding */
+}
+
+form {
+  margin: 50px auto 0; /* Increased margin */
+  max-width: 500px; /* Increased max-width */
+}
+
+.form-actions {
+  margin-top: 30px; /* Increased margin */
+}
+
+.App-cards {
+  margin: 0 auto;
+  max-width: 1280px;
+  text-align: center;
+}
+
+.App-cards-list {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.App-cards-list > * {
+  transform: scale(1); /* Normal scale */
+  margin-bottom: 30px !important;
+}
+
+.credit-card {
+  transform: scale(1.5); /* Increased scale for the card */
+  margin-bottom: 30px !important;
+}
+
+.App-highlight {
+  font-family: serif;
+  margin: 30px auto 0; /* Increased margin */
+  max-width: 400px; /* Increased max-width */
+}
+
+.App-highlight > div {
+  padding-left: 40px;
+}
+
+.btn-home {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 15px 30px; /* Increased padding */
+  font-size: 18px; /* Increased font size */
+  margin-top: 20px; /* Increased margin */
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  font-weight: 600;
+}
+
+.btn-home:hover {
+  background-color: #218838;
+}
+
