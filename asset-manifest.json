@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/SM-Cinema-Reservation-System/static/css/main.b48c6548.css",
-    "main.js": "/SM-Cinema-Reservation-System/static/js/main.66d4bff2.js",
+    "main.css": "/SM-Cinema-Reservation-System/static/css/main.709292c5.css",
+    "main.js": "/SM-Cinema-Reservation-System/static/js/main.9e076890.js",
     "static/media/space.png": "/SM-Cinema-Reservation-System/static/media/space.ec4019ad590426f17a29.png",
     "static/media/damsel.png": "/SM-Cinema-Reservation-System/static/media/damsel.8498d170cf411e6d72b8.png",
     "static/media/this.png": "/SM-Cinema-Reservation-System/static/media/this.a5af2483398270683c2b.png",
     "static/media/etona.jpg": "/SM-Cinema-Reservation-System/static/media/etona.290f766c07749f0492b9.jpg",
     "static/media/sm-logo.png": "/SM-Cinema-Reservation-System/static/media/sm-logo.3422375393c7a755f276.png",
     "index.html": "/SM-Cinema-Reservation-System/index.html",
-    "main.b48c6548.css.map": "/SM-Cinema-Reservation-System/static/css/main.b48c6548.css.map",
-    "main.66d4bff2.js.map": "/SM-Cinema-Reservation-System/static/js/main.66d4bff2.js.map"
+    "main.709292c5.css.map": "/SM-Cinema-Reservation-System/static/css/main.709292c5.css.map",
+    "main.9e076890.js.map": "/SM-Cinema-Reservation-System/static/js/main.9e076890.js.map"
   },
   "entrypoints": [
-    "static/css/main.b48c6548.css",
-    "static/js/main.66d4bff2.js"
+    "static/css/main.709292c5.css",
+    "static/js/main.9e076890.js"
   ]
 }
